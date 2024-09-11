@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Convertor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 id="heading">Timestamp Convertor</h1>
+  <div class="container">
+    <div class="child child1">
+    <p style="color: rgb(143, 4, 4); font-size: 14px; margin-bottom: 1%; font-weight: 800;"> Note: Use only one converter at a time, either convert timestamp to date or date to timestamp.</p>
+      <h1>The Current Epoch Unix Timestamp</h1>
+      <label for="Timestamp">Enter a Timestamp</label>
+      <div>
+      <input type="number" name="Timestamp" placeholder="Timestamp..." id="Timestamp">
+      <p>Supports Unix timestamps in seconds,  milliseconds, microseconds and nanoseconds.</p>
+      </div>
+      <div>
+        <p style="color: #222220c4; font-weight: 700; margin-bottom:2%;">Convert Date to Timestamp</p>
+        <input type="date" name="date" id="dateTimestamp">
+        <p>Choose a date</p>
+      </div>
+      <button id="convert" type="submit">Convert --></button>
+    </div>
+    <div class="child child2">
+      <div class="displayCurrent">
+        <h1 id="currentTimeStamp"></h1>
+        <p>SECONDS SINCE JAN 01 1970. (UTC)</p>
+        <p id="currentTime"></p>
+      </div>
+    </div>
+  </div>
+  <div class="container2">
+    <form action="#">
+      <table>
+        <tr>
+          <th>Timestamp</th>
+          <td id="date-timestamp"></td>
+        </tr>
+        <tr>
+          <th>GMT</th>
+          <td id="GMT-time"></td>
+        </tr>
+        <tr>
+          <th>Your Time Zone</th>
+          <td id="TimeZone"></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,336 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  box-sizing: border-box;
+}
+
+:root{
+ --font-col-1:#fb89fbc8;
+ --font-col-2:#222220c4;
+  --bg-col: #1a7275;
+}
+
+button{
+  cursor: pointer;
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style-type: none;
+}
+
+
+#heading{
+  color: aliceblue;
+  text-align: center;
+  padding: 1%;
+  margin:4% auto 0% auto;
+  background-color: var(--bg-col);
+  width: 70%;
+  font-size: 3rem;
+}
+.container{
+  width: 70%;
+  margin: auto;
+  display: flex;
+  height: 70vh;
+  margin-bottom: 8%;
+
+  .child{
+    display: flex;
+    padding: 1%;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .child1{
+    background-color: #ddd;
+
+    h1{
+     font-weight: 500;
+     color: var(--font-col-2);
+
+    }
+    label{
+      margin-top: 9%;
+      font-weight: 900;
+      font-size: 120%;
+      color: var(--font-col-2);
+    }
+    div{
+      margin: 4% 0% 4% 0%;
+      width: 80%;
+      line-height: 1.6;
+      color: #808080;
+
+
+      input{
+        border: none;
+        color: #4b4949;
+        width: 100%;
+        font-size: 1.7rem;
+        padding:2% 2%;
+        outline: 1px solid rgba(51, 68, 51, 0.281);
+      } 
+
+      input[type="number"]{
+        font-size: 20px;
+      }
+      input[type="date"] {
+        font-size: 20px;
+        color: gray;
+      }
+
+      p{
+        font-size: 1.2rem;
+      }
+        
+    }
+    button{
+      width: 40%;
+      margin-top: 2%;
+      height: 50px;
+      font-size: 1.2rem;
+      border: none;
+      color: aliceblue;
+      background-color: rgba(23, 81, 240, 0.925);
+      border-radius: 4px;
+    }
+
+    button:hover{
+      background-color: darkblue;
+     
+    }
+
+  }
+
+  .child2{
+    background-color: aliceblue;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.4;
+    color: var(--font-col-2);
+
+    h1{
+      font-size: 360%;
+    }
+    p{
+      font-size: 120%;
+    }
+  }
+}
+
+.container2{
+  width: 70%;
+  margin: auto;
+  margin-bottom: 4%;
+  text-align: left;
+  
+  table{
+    border-collapse: collapse;
+    width: 100%;
+    height: 200px;
+
+    td{
+      width: 70%;
+      color: var(--font-col-2);
+      background-color: var(--bg-col);
+      color: white;
+    }
+    th{
+      width: 30%;
+      background-color:#ddd;
+      color: rgb(3, 68, 124);
+    }
+  }
+  th,td{
+    padding-left: 30px;
+    border-bottom: 1px solid white;
+    box-shadow: 1px 1px 3px gray inset;
+
+  }
+
+}
+
+
+@media screen and (max-width: 1024px) {
+  .container{
+    height: 90vh;
+
+
+    .child1{
+      width: 70%;
+      padding: 4%;
+
+      
+      h1{
+        font-size: 160%;
+      }
+    }
+    .child2{
+      /* width: 30%; */
+  
+      h1{
+        font-size: 200%;
+      }
+    }
+  }
+
+
+}
+@media screen and (max-width:890px) {
+
+  #heading{
+    width: 80%;
+  }
+  .container{
+    width: 80%;
+    height: 70vh;
+
+    .child1{
+      width:60%;
+
+      h1{
+        font-size: 177%;
+      }
+    }
+    .child2{
+      width: 40%;
+
+      h1{
+        font-size: 166%;
+      }
+      p{
+        font-size: 87%;
+      }
+    }
+  }
+
+  .container2{
+    width: 80%;
+
+    table{
+      width: 100%;
+    }
+  }
+}
+
+@media  screen and (max-width:560px){
+  #heading{
+    width: 80%;
+  }
+  .container{
+    width: 80%;
+    display: block;
+    height: auto;
+
+    .child{
+      display: block;
+      width: 100%;
+    }
+  
+    .child1{
+      h1{
+        text-align: center;
+        margin-bottom: 9%;
+        font-size: 122%;
+      }
+      label{
+        margin-left: 4%;
+      }
+
+      div{
+        margin: 4%;
+        width: 80%;
+      }
+      button{
+        margin: 4%;
+      }
+    }
+  
+    .child2{
+      margin-top: 20%;
+      h1{
+        font-size: 260%;
+      }
+      p{
+        font-size: 90%;
+      }
+    }
+  }
+
+
+  .container2{
+    width: 100%;
+    margin-top: 20%;
+    padding: 2%;
+    table{
+      width: 100%;
+    }
+
+  }
+}
+
+@media  screen and (max-width:480px) {
+
+  #heading{
+    width: 100%;
+  }
+  .container{
+    width: 100%;
+    display: block;
+    height: auto;
+
+    .child{
+      display: block;
+      width: 100%;
+    }
+  
+    .child1{
+      h1{
+        text-align: center;
+        margin-bottom: 9%;
+        font-size: 122%;
+      }
+      label{
+        margin-left: 4%;
+      }
+
+      div{
+        margin: 4%;
+        width: 80%;
+      }
+      button{
+        margin: 4%;
+      }
+    }
+  
+    .child2{
+      margin-top: 20%;
+      h1{
+        font-size: 260%;
+      }
+      p{
+        font-size: 90%;
+      }
+    }
+  }
+
+
+  .container2{
+    width: 100%;
+    margin-top: 20%;
+    padding: 2%;
+    table{
+      width: 100%;
+    }
+
+  }
+}
